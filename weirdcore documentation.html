@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+html{
+  background-color:black;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: black;
+  color: white;
+  margin: 0 auto; 
+  margin-bottom: -20px;
+  width:100%;
+}
+
+/* MENU */
+#navbar{
+  float: left;
+  margin-right: 20px; 
+  position: fixed;
+  width: 200px;
+  background-color: black;
+  top:0;
+  bottom:0;
+  left:0;
+  border-right: solid 3px white;
+}
+
+#navbar header{
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 33px;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+#navbar ul {
+  padding: 0;
+  padding-top:20px;
+  margin: 0;
+  font-family: 'Averia Libre', cursive;
+}
+
+#navbar li{
+   list-style: none;
+   font-size: 20px;
+}
+
+#navbar li a{
+  text-decoration:none;
+  color:white;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  filter: blur(1.5px);
+  transition:0.5s;
+}
+
+/*MENU: HOVER*/
+#navbar li a:hover{
+  color:black;
+  filter: blur(0);
+  font-weight: bold;
+  transition:0.5s;
+  text-shadow: 0 0 2px black;
+}
+
+#pink:hover{
+  background-color:#ff00cd;
+}
+#red:hover{
+  background-color:#FF0000;
+}
+#yellow:hover{
+  background-color:#fef200;
+}
+#green:hover{
+  background-color:#04ff00;
+}
+#blue:hover{
+  background-color:#00aeff;
+}
+#purple:hover{
+  background-color:#cc00ff;
+}
+
+/* MAIN SECTION*/
+i{
+  transition: 0.5s;
+}
+
+i:hover{
+  color:#fef200;
+  transition: 0.5s;
+}
+
+.main-section{
+  width:80%;
+  margin-left:230px;
+  padding-top:50px;
+  padding-right:20px;
+}
+
+.main-section header{
+  padding-bottom:15px;
+  font-size: 30px;
+  font-family: 'Rubik Vinyl', cursive;
+  letter-spacing:3px;
+  text-shadow: 0 0 2px white;
+  transition: 1s;
+}
+
+.main-section header:hover{
+  letter-spacing: 6px;
+  transition: 1s;
+}
+
+.main-section code{
+  font-size: 20px;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px;
+}
+
+.main-section ul {
+  font-size: 20px;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px;
+}
+
+.main-section li{
+   list-style: circle;
+   transition: 0.5s;
+}
+
+.main-section li:hover{
+   color:#FF0000;
+   transition: 0.5s;
+}
+
+/* QUOTES */
+.quote-1{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Averia Libre', cursive;
+  line-height:50px; 
+}
+
+/* CREDITS */
+.credits{
+  width:80%;
+  text-align: center;
+  padding-bottom:20px;
+  margin-left:230px;
+  padding-top:50px;
+  padding-right:20px;
+  font-size: 20px;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px;
+}
+
+/* CREDITS: HOVER*/
+.credits a{
+  color:#ff00cd;
+}
+
+.credits a:hover{
+  color:#04ff00;
+}
+
+.credits a:active{
+  color:#00aeff;
+}
+
+.credits a:visited{
+  color:#cc00ff;
+}
+
+/* SCROLLBAR: WIDTH AND COLOR */
+::-webkit-scrollbar {
+  width: 12px;
+   background: linear-gradient(to bottom,#ff00cd,
+#FF0000, #fef200, #04ff00, #00aeff, #cc00ff);
+}
+
+/* SCROLLBAR: THUMB */
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  
+  
+}
+
+/* IMAGES */
+.image-1{
+  width: 50%;
+  text-align: center;
+  margin-left:290px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.image-1 img{
+  border: solid 3px white;
+  height:500px;
+}
+
+.image-2{
+  width: 50%;
+  text-align: center;
+  margin-left:235px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.image-2 img{
+  border: solid 3px white;
+  width:600px;
+  align-items:center;
+}
+
+.image-3{
+  width: 50%;
+  text-align: center;
+  margin-left:235px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.image-3 img{
+  border: solid 3px white;
+  width:600px;
+  align-items:center;
+}
+
+/*IMAGES: MANY */
+.image-4{
+  width: 100%;
+  text-align: center;
+  margin-top:25px;
+  margin-bottom:50px;
+}
+
+.image-4 img{
+  display:inline-block;
+  border: solid 3px white;
+  width:300px;
+  align-items:center;
+  margin-right:30px;
+  margin-bottom:30px;
+  transition: 0.5s;
+}
+
+.image-4 img:hover{
+  scale:1.1;
+  transition: 0.5s;
+}
+
+/**************************************************************/
+/* SCREEN SIZE 320PX - 480PX*/
+@media screen and (min-width: 320px) and (max-width: 480px){
+  html{
+    background-color:black;
+    width:20px;
+  }
+
+  body{
+    background-color: black;
+    padding:0;
+    width:80%;
+    max-width:320px;
+  }
+
+  /* MENU */
+  #navbar{
+  float: left;
+  margin-right: 20px; 
+  position: fixed;
+  width: 80px;
+  background-color: black;
+  top:0;
+  bottom:0;
+  left:0;
+  border-right: solid 3px white;
+}
+
+#navbar header{
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+#navbar ul {
+  padding: 0;
+  padding-top:20px;
+  margin: 0;
+  font-family: 'Averia Libre', cursive;
+}
+
+#navbar li{
+   list-style: none;
+   font-size: 10px;
+}
+
+#navbar li a{
+  text-decoration:none;
+  color:white;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  filter: blur(0px);
+  transition:0.5s;
+}
+
+/*MENU: HOVER*/
+#navbar li a:hover{
+  color:black;
+  filter: blur(0);
+  font-weight: bold;
+  transition:0.5s;
+  text-shadow: 0 0 2px black;
+}
+
+/* MAIN SECTION */
+html{
+  padding-right:0;
+}
+
+body{
+  background-color: black;
+  color: white;
+  margin: 0 auto; 
+  margin-bottom: -20px;
+  width:100%;
+}
+
+.main-section{
+  width:80%;
+  margin-left:100px;
+  padding-top:50px;
+  padding-right:00px;
+}
+
+.main-section header{
+  padding-bottom:15px;
+  font-size: 20px;
+  font-family: 'Rubik Vinyl', cursive;
+  letter-spacing:3px;
+  text-shadow: 0 0 2px white;
+  transition: 1s;
+  max-width:100px;
+}
+
+.main-section header:hover{
+  letter-spacing: 3px;
+  transition: 1s;
+}
+
+.main-section code{
+  font-size: 12px;
+  font-family: 'Averia Libre', cursive;
+  line-height:15px;
+}
+
+.main-section p{
+  width:180px;
+}
+
+.main-section ul {
+  font-size: 12px;
+  font-family: 'Averia Libre', cursive;
+  line-height:15px;
+  width:150px;
+}
+
+/* QUOTES */
+.quote-1{
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px; 
+  width:200px;
+}
+
+/* IMAGES */
+.image-1{
+  width: 50%;
+  text-align: center;
+  margin-left:0px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.image-1 img{
+  border: solid 3px white;
+  height:170px;
+}
+
+.image-2{
+  width: 50%;
+  text-align: center;
+  margin-left:0px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.image-2 img{
+  border: solid 3px white;
+  width:180px;
+  align-items:center;
+}
+
+.image-3{
+  width: 50%;
+  text-align: center;
+  margin-left:10px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.image-3 img{
+  border: solid 3px white;
+  width:180px;
+  align-items:center;
+}
+
+/*IMAGES: MANY */
+.image-4{
+  width: 100%;
+  text-align: left;
+  margin-top:25px;
+  margin-bottom:50px;
+}
+
+.image-4 img{
+  display:inline-block;
+  border: solid 3px white;
+  width:150px;
+  align-items:center;
+  margin-right:0px;
+  margin-bottom:20px;
+  transition: 0.5s;
+}
+
+.image-4 img:hover{
+  scale:1.1;
+  transition: 0.5s;
+}
+
+/* CREDITS */
+.credits{
+  width:80%;
+  text-align: left;
+  padding-bottom:20px;
+  margin-left:100px;
+  padding-top:0px;
+  padding-right:20px;
+  font-size: 12px;
+  font-family: 'Averia Libre', cursive;
+  line-height:15px;
+  max-width:180px;
+}
+}
+
+/**************************************************************/
+/* SCREEN SIZE 600PX - 800PX*/
+@media screen and (min-width: 600px) and (max-width: 800px){
+  html{
+    background-color:black;
+    width:20px;
+  }
+
+  body{
+    background-color: black;
+    padding:0;
+    width:80%;
+    max-width:320px;
+  }
+
+  /* MENU */
+  #navbar{
+  float: left;
+  margin-right: 20px; 
+  position: fixed;
+  width: 100px;
+  background-color: black;
+  top:0;
+  bottom:0;
+  left:0;
+  border-right: solid 3px white;
+}
+
+#navbar header{
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+#navbar ul {
+  padding: 0;
+  padding-top:20px;
+  margin: 0;
+  font-family: 'Averia Libre', cursive;
+}
+
+#navbar li{
+   list-style: none;
+   font-size: 12px;
+}
+
+#navbar li a{
+  text-decoration:none;
+  color:white;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  filter: blur(0px);
+  transition:0.5s;
+}
+
+/*MENU: HOVER*/
+#navbar li a:hover{
+  color:black;
+  filter: blur(0);
+  font-weight: bold;
+  transition:0.5s;
+  text-shadow: 0 0 2px black;
+}
+
+/* MAIN SECTION */
+html{
+  padding-right:0;
+}
+
+body{
+  background-color: black;
+  color: white;
+  margin: 0 auto; 
+  margin-bottom: -20px;
+  width:100%;
+}
+
+.main-section{
+  width:80%;
+  margin-left:130px;
+  padding-top:50px;
+  padding-right:00px;
+}
+
+.main-section header{
+  padding-bottom:15px;
+  font-size: 20px;
+  font-family: 'Rubik Vinyl', cursive;
+  letter-spacing:3px;
+  text-shadow: 0 0 2px white;
+  transition: 1s;
+  width:400px
+  
+  
+}
+
+.main-section header:hover{
+  letter-spacing: 3px;
+  transition: 1s;
+}
+
+.main-section code{
+  font-size: 12px;
+  font-family: 'Averia Libre', cursive;
+  line-height:15px;
+}
+
+.main-section p{
+  width:430px;
+}
+
+.main-section ul {
+  font-size: 12px;
+  font-family: 'Averia Libre', cursive;
+  line-height:15px;
+  width:400px;
+}
+
+/* QUOTES */
+.quote-1{
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px; 
+  width:200px;
+}
+
+/* IMAGES */
+.image-1{
+  width: 50%;
+  text-align: center;
+  margin-left:100px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.image-1 img{
+  border: solid 3px white;
+  height:200px;
+}
+
+.image-2{
+  width: 50%;
+  text-align: center;
+  margin-left:120px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.image-2 img{
+  border: solid 3px white;
+  width:200px;
+  align-items:center;
+}
+
+.image-3{
+  width: 50%;
+  text-align: center;
+  margin-left:100px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.image-3 img{
+  border: solid 3px white;
+  width:200px;
+  align-items:center;
+}
+
+/*IMAGES: MANY */
+.image-4{
+  width: 400px;
+  text-align: left;
+  margin-top:25px;
+  margin-bottom:50px;
+
+}
+
+.image-4 img{
+  display:inline-block;
+  border: solid 3px white;
+  width:150px;
+  align-items:center;
+  margin-right:20px;
+  margin-bottom:20px;
+  transition: 0.5s;
+}
+
+.image-4 img:hover{
+  scale:1.1;
+  transition: 0.5s;
+}
+
+/* CREDITS */
+.credits{
+  width:500px;
+  text-align: left;
+  padding-bottom:20px;
+  margin-left:130px;
+  padding-top:0px;
+  padding-right:20px;
+  font-size: 12px;
+  font-family: 'Averia Libre', cursive;
+  line-height:15px;
+  max-width:180px;
+}
+}
+
+/**************************************************************/
+/* SCREEN SIZE 1024PX - 1280PX*/
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+  html{
+    background-color:black;
+    width:20px;
+  }
+
+  body{
+    background-color: black;
+    padding:0;
+    width:80%;
+    max-width:320px;
+  }
+
+  /* MENU */
+#navbar{
+  float: left;
+  margin-right: 20px; 
+  position: fixed;
+  width: 200px;
+  background-color: black;
+  top:0;
+  bottom:0;
+  left:0;
+  border-right: solid 3px white;
+}
+
+#navbar header{
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 33px;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+#navbar ul {
+  padding: 0;
+  padding-top:20px;
+  margin: 0;
+  font-family: 'Averia Libre', cursive;
+}
+
+#navbar li{
+   list-style: none;
+   font-size: 20px;
+}
+
+#navbar li a{
+  text-decoration:none;
+  color:white;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  filter: blur(1.5px);
+  transition:0.5s;
+}
+
+/*MENU: HOVER*/
+#navbar li a:hover{
+  color:black;
+  filter: blur(0);
+  font-weight: bold;
+  transition:0.5s;
+  text-shadow: 0 0 2px black;
+}
+
+/* MAIN SECTION */
+html{
+  padding-right:0;
+}
+
+body{
+  background-color: black;
+  color: white;
+  margin: 0 auto; 
+  margin-bottom: -20px;
+  width:100%;
+}
+
+
+.main-section{
+  width:80%;
+  margin-left:230px;
+  padding-top:50px;
+  padding-right:20px;
+}
+
+.main-section header{
+  padding-bottom:15px;
+  font-size: 30px;
+  font-family: 'Rubik Vinyl', cursive;
+  letter-spacing:3px;
+  text-shadow: 0 0 2px white;
+  transition: 1s;
+  width:750px;
+}
+
+.main-section header:hover{
+  letter-spacing: 6px;
+  transition: 1s;
+}
+
+.main-section code{
+  font-size: 20px;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px;
+}
+
+.main-section p{
+  width:750px;
+}
+.main-section ul {
+  font-size: 20px;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px;
+  width:700px;
+}
+
+/* IMAGES */
+.image-1{
+  width: 50%;
+  text-align: center;
+  margin-left:130px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.image-1 img{
+  border: solid 3px white;
+  height:500px;
+}
+
+.image-2{
+  width: 50%;
+  text-align: center;
+  margin-left:80px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.image-2 img{
+  border: solid 3px white;
+  width:600px;
+  align-items:center;
+}
+
+.image-3{
+  width: 50%;
+  text-align: center;
+  margin-left:80px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.image-3 img{
+  border: solid 3px white;
+  width:600px;
+  align-items:center;
+}
+
+/*IMAGES: MANY */
+.image-4{
+  width: 750px;
+  text-align: center;
+  margin-top:25px;
+  margin-bottom:50px;
+}
+
+.image-4 img{
+  display:inline-block;
+  border: solid 3px white;
+  width:300px;
+  align-items:center;
+  margin-right:30px;
+  margin-bottom:30px;
+  transition: 0.5s;
+}
+
+.image-4 img:hover{
+  scale:1.1;
+  transition: 0.5s;
+}
+
+/* QUOTES */
+.quote-1{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Averia Libre', cursive;
+  line-height:50px; 
+}
+
+/* CREDITS */
+.credits{
+  width:750px;
+  text-align: center;
+  padding-bottom:20px;
+  margin-left:230px;
+  padding-top:50px;
+  padding-right:20px;
+  font-size: 20px;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px;
+}
+}
+
+/**************************************************************/
+/* SCREEN SIZE 1440PX - 1920PX*/
+@media screen and (min-width: 1440px) and (max-width: 1920px){
+  html{
+    background-color:black;
+    width:20px;
+  }
+
+  body{
+    background-color: black;
+    padding:0;
+    width:80%;
+    max-width:320px;
+  }
+
+  /* MENU */
+#navbar{
+  float: left;
+  margin-right: 20px; 
+  position: fixed;
+  width: 200px;
+  background-color: black;
+  top:0;
+  bottom:0;
+  left:0;
+  border-right: solid 3px white;
+}
+
+#navbar header{
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 33px;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+#navbar ul {
+  padding: 0;
+  padding-top:20px;
+  margin: 0;
+  font-family: 'Averia Libre', cursive;
+}
+
+#navbar li{
+   list-style: none;
+   font-size: 20px;
+}
+
+#navbar li a{
+  text-decoration:none;
+  color:white;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  filter: blur(1.5px);
+  transition:0.5s;
+}
+
+/*MENU: HOVER*/
+#navbar li a:hover{
+  color:black;
+  filter: blur(0);
+  font-weight: bold;
+  transition:0.5s;
+  text-shadow: 0 0 2px black;
+}
+
+/* MAIN SECTION */
+html{
+  padding-right:0;
+}
+
+body{
+  background-color: black;
+  color: white;
+  margin: 0 auto; 
+  margin-bottom: -20px;
+  width:100%;
+}
+
+
+.main-section{
+  width:80%;
+  margin-left:230px;
+  padding-top:50px;
+  padding-right:20px;
+}
+
+.main-section header{
+  padding-bottom:15px;
+  font-size: 30px;
+  font-family: 'Rubik Vinyl', cursive;
+  letter-spacing:3px;
+  text-shadow: 0 0 2px white;
+  transition: 1s;
+  width:750px;
+}
+
+.main-section header:hover{
+  letter-spacing: 6px;
+  transition: 1s;
+}
+
+.main-section code{
+  font-size: 20px;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px;
+}
+
+.main-section p{
+  width:750px;
+}
+.main-section ul {
+  font-size: 20px;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px;
+  width:700px;
+}
+
+/* IMAGES */
+.image-1{
+  width: 50%;
+  text-align: center;
+  margin-left:130px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.image-1 img{
+  border: solid 3px white;
+  height:500px;
+}
+
+.image-2{
+  width: 50%;
+  text-align: center;
+  margin-left:80px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.image-2 img{
+  border: solid 3px white;
+  width:600px;
+  align-items:center;
+}
+
+.image-3{
+  width: 50%;
+  text-align: center;
+  margin-left:80px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.image-3 img{
+  border: solid 3px white;
+  width:600px;
+  align-items:center;
+}
+
+/*IMAGES: MANY */
+.image-4{
+  width: 750px;
+  text-align: center;
+  margin-top:25px;
+  margin-bottom:50px;
+}
+
+.image-4 img{
+  display:inline-block;
+  border: solid 3px white;
+  width:300px;
+  align-items:center;
+  margin-right:30px;
+  margin-bottom:30px;
+  transition: 0.5s;
+}
+
+.image-4 img:hover{
+  scale:1.1;
+  transition: 0.5s;
+}
+
+/* QUOTES */
+.quote-1{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Averia Libre', cursive;
+  line-height:50px; 
+}
+
+/* CREDITS */
+.credits{
+  width:750px;
+  text-align: center;
+  padding-bottom:20px;
+  margin-left:230px;
+  padding-top:50px;
+  padding-right:20px;
+  font-size: 20px;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px;
+}
+}
+
+/**************************************************************/
+/* SCREEN SIZE 2560PX - 4000PX*/
+@media screen and (min-width: 2560px) and (max-width: 4000px){
+  html{
+    background-color:black;
+    width:20px;
+  }
+
+  body{
+    background-color: black;
+    padding:0;
+    width:80%;
+    max-width:320px;
+  }
+
+  /* MENU */
+#navbar{
+  float: left;
+  margin-right: 20px; 
+  position: fixed;
+  width: 200px;
+  background-color: black;
+  top:0;
+  bottom:0;
+  left:0;
+  border-right: solid 3px white;
+}
+
+#navbar header{
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 33px;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+#navbar ul {
+  padding: 0;
+  padding-top:20px;
+  margin: 0;
+  font-family: 'Averia Libre', cursive;
+}
+
+#navbar li{
+   list-style: none;
+   font-size: 20px;
+}
+
+#navbar li a{
+  text-decoration:none;
+  color:white;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  filter: blur(1.5px);
+  transition:0.5s;
+}
+
+/*MENU: HOVER*/
+#navbar li a:hover{
+  color:black;
+  filter: blur(0);
+  font-weight: bold;
+  transition:0.5s;
+  text-shadow: 0 0 2px black;
+}
+
+/* MAIN SECTION */
+html{
+  padding-right:0;
+}
+
+body{
+  background-color: black;
+  color: white;
+  margin: 0 auto; 
+  margin-bottom: -20px;
+  width:100%;
+}
+
+
+.main-section{
+  width:80%;
+  margin-left:230px;
+  padding-top:50px;
+  padding-right:20px;
+}
+
+.main-section header{
+  padding-bottom:15px;
+  font-size: 30px;
+  font-family: 'Rubik Vinyl', cursive;
+  letter-spacing:3px;
+  text-shadow: 0 0 2px white;
+  transition: 1s;
+  width:750px;
+}
+
+.main-section header:hover{
+  letter-spacing: 6px;
+  transition: 1s;
+}
+
+.main-section code{
+  font-size: 20px;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px;
+}
+
+.main-section p{
+  width:750px;
+}
+.main-section ul {
+  font-size: 20px;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px;
+  width:700px;
+}
+
+/* IMAGES */
+.image-1{
+  width: 50%;
+  text-align: center;
+  margin-left:130px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.image-1 img{
+  border: solid 3px white;
+  height:500px;
+}
+
+.image-2{
+  width: 50%;
+  text-align: center;
+  margin-left:80px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.image-2 img{
+  border: solid 3px white;
+  width:600px;
+  align-items:center;
+}
+
+.image-3{
+  width: 50%;
+  text-align: center;
+  margin-left:80px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.image-3 img{
+  border: solid 3px white;
+  width:600px;
+  align-items:center;
+}
+
+/*IMAGES: MANY */
+.image-4{
+  width: 750px;
+  text-align: center;
+  margin-top:25px;
+  margin-bottom:50px;
+}
+
+.image-4 img{
+  display:inline-block;
+  border: solid 3px white;
+  width:300px;
+  align-items:center;
+  margin-right:30px;
+  margin-bottom:30px;
+  transition: 0.5s;
+}
+
+.image-4 img:hover{
+  scale:1.1;
+  transition: 0.5s;
+}
+
+/* QUOTES */
+.quote-1{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Averia Libre', cursive;
+  line-height:50px; 
+}
+
+/* CREDITS */
+.credits{
+  width:750px;
+  text-align: center;
+  padding-bottom:20px;
+  margin-left:230px;
+  padding-top:50px;
+  padding-right:20px;
+  font-size: 20px;
+  font-family: 'Averia Libre', cursive;
+  line-height:30px;
+}
+}
+
+
+</style>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Weirdcore</title>
+  </head>
+
+  <body>
+<!--TITLE-->    
+    <nav id="navbar">
+      <header>Weirdcore</header>
+<!--MENU--> 
+      <ul>
+<!--MENU: 1--> 
+        <li><a id="pink" class="nav-link" href="#What_is_Weirdcore?">What is Weirdcore?</a></li>
+
+<!--MENU: 2--> 
+        <li><a id="red" class="nav-link" href="#Visual_of_Weirdcore">Visual of Weirdcore</a></li>
+        
+<!--MENU: 3--> 
+        <li><a id="yellow" class="nav-link" href="#Origins_of_Weirdcore">Origins of Weirdcore</a></li>
+
+<!--MENU: 4--> 
+        <li><a id="green" class="nav-link" href="#The_Feelings">The Feelings</a></li>
+
+<!--MENU: 5--> 
+        <li><a id="blue" class="nav-link" href="#The_Controversial_Mix_Up">The Controversial Mix Up</a></li>
+<!--MENU: 6--> 
+        <li><a id="purple" class="nav-link" href="#Weirdcore_Images">Weirdcore Images</a></li>
+      </ul>
+    </nav>
+
+<!--CONTENT--> 
+    <main id="main-doc">
+
+<!--SECTION: 1--> 
+      <section class="main-section" id="What_is_Weirdcore?">
+        <header>What is Weirdcore?</header>
+        <p><code>Weirdcore is a surrealist aesthetic centered around amateur or low-quality photography and/or visual images that have been constructed or edited to convey feelings of confusion, disorientation, dread, alienation, and nostalgia or anemoia.</code></p>
+        <p><code>Visually, it is strongly influenced by the general look and feel of images shared on an older internet, roughly a period spanning from around the late 90's to mid 2000's. Amateur editing, primitive digital graphics, lo-fi photography and image compression are some of the most common elements found in Weirdcore images.</code></p>
+        <p><code>Thematically, Weirdcore often conveys a feeling of dread, brought forth by its low quality imagery and a lack of context in regards to the location or the message being shown. This does not mean that Weirdcore is deeply rooted in horror, however, as the feeling of fear left on the viewer is merely a side effect of placing them in an unfamiliar setting or context. This is purely subjective however, and depends on the viewer, their own experiences and the content of an edit; while some people might find a Weirdcore image scary or ominous, others might feel nostalgia or even a feeling of comfort.</code></p>
+        <ul>
+          <li><b>Other names:</b> Oddcore, Strangecore.</li>
+          <li><b>Decade of origin:</b> Late 90's-mid 2000's mostly around (mid-2020).</li>
+          <li><b>Key motifs:</b> Liminal space, cursed images, low quality JPEGs, lack of context, bizarre imagery.</li>
+          <li><b>Key values:</b> Confusion, discomfort, nostalgia, dread.</li>
+          <li><b>Related aesthetics:</b> After Hours, Bastardcore, Busukawaii, Dreamcore, Frutiger Aero, Kidcore, Feralcore, Liminal Space, Nostalgiacore, Old Web, Surrealism, Y2K.</li>
+        </ul>
+      </section>
+
+<!--SECTION: 2--> 
+      <section class="main-section" id="Visual_of_Weirdcore">
+        <header>Visual of Weirdcore</header>
+        <p><code>Amateur, blurry or Lo-Fi photography is one of the most common elements in Weirdcore. These are often Liminal Spaces, an aesthetic that Weirdcore has a strong connection to and often relies on, but the use of them is not obligatory. The virtual part of an image often (but not always) manifests itself in the form of plain-looking text which conveys a message that is incomplete or out of context, thus leaving the viewer to ask questions and make their own interpretations in regards to the meaning of the statement presented to them (keep in mind that text is not a necessary part of Weirdcore).</code></p>
+        <p><code>It is important to know, however, that both of these "portions" of Weirdcore do not need to be present simultaneously to make a good image; for example, a Weirdcore image may be constructed exclusively out of virtual elements and could still be categorized as such. The same applies to amateur/lo-fi photography, but regardless of how the process of creating Weirdcore is approached, the images should still aim to put the viewer in an unfamiliar and, occasionally, somewhat hostile context.</code></p>
+        <div class="image-1">
+          <img src="https://i.snap.as/mYRsvQfT.jpg" alt="weirdcore-img-1"
+        </div>
+      </section>
+
+<!--SECTION: 3--> 
+      <section class="main-section" id="Origins_of_Weirdcore">
+        <header>Origins of Weirdcore</header>
+        <p><code>Currently, the exact origins of Weirdcore are unknown, but may go as far back as the early 2010s; It has recently been determined that the earliest Weirdcore edit with a confirmed date of creation was made in 2017, but there could be earlier examples out there that remain unknown.</code></p>
+        <p><code>The genre started to pick up popularity when a YouTuber by the name of DavidCrypt uploaded a video explaining the Weirdcore aesthetic. Whilst there are popular Weirdcore creators, it is often hard to find the most popular or the origins of the content and creators, as most current Weirdcore content is uploaded to Tumblr, which doesn't show follower counts.</code></p>
+      </section>
+
+<!--SECTION: 4--> 
+      <section class="main-section" id="The_Feelings">
+        <header>The Feelings</header>
+        <p><code><i>“What’s wonderful about Weirdcore is that it triggers this nostalgia in a way where the viewer doesn’t know why,”</i> said Gib, one of the moderators of r/weirdcore and co-administrator of the Discord server dedicated to the art movement. Gib, therefore, described the feelings evoked as <i>“nostalgia from an unknown place.”</i> It’s on the tip of your hippocampus yet miles away from recall and recognition.</code></p>
+        <p><code><i>“Lack of context,”</i> explained Sanfor, moderator and co-administrator of the subreddit and Discord server alongside Gib. <i>“Often, images will aim to put the viewer into an unfamiliar setting—one that is designed to spark an idea in the viewer’s mind—but at the same time, it doesn’t give enough information to really form a story.”</i> This is what leaves Weirdcore images up for interpretation, making it incomprehensible in a mysterious way.</code></p>
+        <p><code>On the flip side, this sort of autonomy can trigger two contrasting emotions among its audience—depending entirely upon their perception of nostalgia. <i>“Weirdcore can trigger comfort in some because it probably reminds them of a nicer time in their life,”</i> Gib said. <i>“But it can also trigger a bad memory or a phobia, leaving them confused and scared.”</i> Sanfor linked this aspect to the concept of ‘introspection’. <i>“Weirdcore can be triggering because, at its core, it is about exploring one’s emotions and experiences,”</i> he explained, adding how the meaning behind images are often unclear—in turn fostering one of the biggest strengths of Weirdcore in itself: vagueness.</code></p>
+        <p><code><i>“The aesthetic can be upsetting due to the way images sometimes contain elements that contradict one another: comforting visuals being paired up with upsetting ones, real with fake and so on,”</i> Sanfor said. Juxtapositions like these are what contribute to Weirdcore images being difficult to comprehend, as one can never fully grasp what a piece is trying to communicate in terms of information or emotion.</code></p>
+        <p class="quote-1">“It is the fear of the unknown”</p>
+        <div class="image-2">
+          <img src="https://i.pinimg.com/564x/20/7d/93/207d931ccb5445015129dabf6a52574b.jpg" alt="weirdcore-img-2">
+        </div>
+      </section>
+
+<!--SECTION: 5--> 
+      <section class="main-section" id="The_Controversial_Mix_Up">
+        <header>The Controversial Mix Up</header>
+        <p><code>Given Weirdcore’s association with both light-headed comfort and heavy phobias, the art movement is often looped into the same category as Dreamcore and Traumacore. This ‘mix up’ is even more apparent on TikTok where creators use all three hashtags in their captions.</code></p>
+        <p><code><i>“Dreamcore and Traumacore are grey areas,”</i> Gib started. Although Weirdcore has similar motifs as Traumacore, the latter addresses traumatic events with darker, off-putting and direct captions. <i>“Traumacore opens a gateway to glorifying trauma and downplaying it instead of educating about it,”</i> he added. <i>“But it’s a whole debate because some people find comfort in it.”</i> Dreamcore, on the other hand, is even harder to differentiate according to Gib. <i>“Dreamcore tries to emulate dreams but they’re more linear and can have a bit more of a story than Weirdcore does.”</i></code></p>
+        <p><code>Sanfor, the moderator highlighted the absence of one key factor in Dreamcore and Traumacore when compared to Weirdcore: a centralised community dedicated to preserving it. <i>“This is something that has happened to Weirdcore in the past—the aesthetic not having people dedicated to its preservation and moderation led to the term ‘Weirdcore’ becoming a label with no meaning behind it. This, in turn, led to it being used interchangeably with Dreamcore, Traumacore and others.”</i></code></p>
+        <p><code>In response, Sanfor added how the Weirdcore community has worked hard to get in touch with original creators behind some of the classic images in the movement. <i>“The ones that brought the community together in the first place,”</i> as Sanfor describes them. This has not only helped members learn from each other but has also fostered a platform backed with proper credentials. The community also updates the Wiki article dedicated to Weirdcore regularly—in order to give it a definition that accurately reflects its original vision.</code></p>
+        <p><code><i>“I believe Weirdcore needs to be its own thing,”</i> Sanfor added. <i>“Not to say that there cannot be overlapping between Weirdcore and other aesthetics or things inspired by it, but I just think it’s important for it to not become completely meaningless as there are specific ideas and concepts behind Weirdcore that make it unique.”</i></code></p>
+        <div class="image-3">
+          <img src="https://i.pinimg.com/474x/c7/9c/2f/c79c2f2888dd6e7058d7525c8d557456.jpg" alt="weirdcore-img-3">
+        </div>
+        <p><code>Now onto all those people equating Liminal Spaces and Bastardcore to Weirdcore. The former is an aesthetic that features a place which is a transition between two locations or states of being. Think abandoned parking lots or school hallways during the peak of summer. Bastardcore, on the other hand, is an extension of the ‘cursed images’ meme. It aims to strike your fight or flight response by pairing friendly images with shocking humour to generate pieces that are uncomfortable to look at.</code></p>
+        <p><code><i>“A lot of what makes Liminal Spaces so effective is the feeling of ‘you’ve been here before’,”</i> explained Gib. <i>“That’s kind of what Weirdcore does but with more creative freedom.”</i> Although Liminal Spaces are relied on for Weirdcore backgrounds, Gib outlined how it doesn’t play a huge role in the movement now like it once did. <i>“Liminality, along with the sense of being in a transitory state and the feeling of uncertainty and instability, is an important part of Weirdcore,”</i> Sanfor added. <i>“Keep in mind, however, that the use of Liminal Spaces in Weirdcore is not obligatory. There are great examples of the aesthetic that do not rely on them at all.”</i> While Bastardcore overlaps with Weirdcore in some ways, the latter is a lot more subtle about the ‘cursed’ aspect of its imagery—designed to be incoherent rather than unpleasant.</code></p>
+        <p><code>Then there is the entire debate about eyes being a key motif in Weirdcore. According to Gib, the element plays on scopophobia, human’s innate fear of being watched. Ironic, given how gen Zers are currently obsessed with meta selfies—least concerned about BigTech using their personal information. <i>“It’s kind of an inside joke in the community that eyes and red text do not equal Weirdcore and that there’s a lot more to it than that,”</i> Gib explained. <i>“They’re not bad aspects, I use them semi-frequently in my creations, but I think a lot of it comes from the days when the movement wasn’t moderated.”</i></code></p>
+        <p class="quote-1">“They all share the commonality of being a medium for expression of abstract feelings—a way to condense complex emotions into a singular piece of art”</p>
+      </section>
+<!--SECTION: 6--> 
+      <section class="main-section" id="Weirdcore_Images">
+        <header>Weirdcore Images</header>
+        <div class="image-4">
+<!--ROW 1--> 
+          <img src="https://i1.sndcdn.com/artworks-UjJwbPnB8ycm2xFx-OR6LwQ-t500x500.jpg" alt="img-1">
+          <img src="https://i.redd.it/2lb6hetp0ol61.png" alt="img-2">
+          <img src="https://pbs.twimg.com/media/E_i3kRvVcAcNH-j.jpg" alt="img-3">
+
+<!--ROW 2-->          
+          <img src="https://i.pinimg.com/736x/69/2e/d9/692ed964df06694fdea3f922ba248955.jpg" alt="img-4">
+          <img src="https://i.pinimg.com/236x/47/90/36/479036a0a6b02d17a05d803535bbf568.jpg" alt="img-5">
+          <img src="https://i.pinimg.com/originals/5a/4b/46/5a4b4615de37d7fa6d2f770b4fa92e7c.png" alt="img-6">
+
+<!--ROW 3--> 
+          <img src="https://64.media.tumblr.com/1fdf3956e5c1c34e492cdcb8831ee497/tumblr_pfht1pMEs91vtts30o1_1280.jpg" alt="img-7">
+          <img src="https://i.pinimg.com/236x/15/7e/1e/157e1e68361fba4333fc91936bcbbfc0.jpg" alt="img-8">
+          <img src="https://screenshot-media.com/wp-content/uploads/2021/09/creator-unknown-9.png" alt="img-9">
+
+<!--ROW 4--> 
+          <img src="https://img.wattpad.com/5acd36589bdcd1026e088bfc469a0250d0dc6ecb/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f34713643303758324a546d5468413d3d2d313139353734373131352e313664363533636639356431613664613334393537353938363435332e6a7067" alt="img-10">
+          <img src="https://external-preview.redd.it/yP01yUgpu8lUkxyGWhmR2FHHxJwDg0Fp_xDK4Mmdklc.png?format=pjpg&auto=webp&s=60bbea62cf427fdd9810cf82d8afa63040b19e6e" alt="img-11">
+          <img src="https://i.pinimg.com/originals/05/ca/b6/05cab62ec6ac29fe0dc4d0ac7ae3c59e.jpg" alt="img-12">
+          
+<!--ROW 5--> 
+          <img src="https://screenshot-media.com/wp-content/uploads/2021/08/800.png" alt="img-13">
+          <img src="https://pbs.twimg.com/media/EkUHe1LXsAc68KD.jpg" alt="img-14">
+          <img src="https://n.sinaimg.cn/fashion/crawl/126/w550h376/20220908/a2ed-f534284f2097afbc56b99acfd6d3d27e.jpg" alt="img-15">
+
+<!--ROW 6--> 
+          <img src="https://static.wikia.nocookie.net/f1afa59c-2907-4c1a-9942-493bee1e18a9/scale-to-width/755" alt="img-16">
+          <img src="https://i.pinimg.com/736x/39/09/df/3909df9a69ba0b7dfe2d2ff91ce78ed9.jpg" alt="img-17">
+          <img src="https://i.pinimg.com/1200x/d4/de/ee/d4deeeff6f5ee02be14a5f13a2106536.jpg" alt="img-18">
+
+<!--ROW 7--> 
+          <img src="https://i.redd.it/2i14e67gw4c91.png" alt="img-18">
+          <img src="https://i.kym-cdn.com/photos/images/facebook/002/182/200/463.jpg" alt="img-19">
+          <img src="https://cdn.memes.com/up/62239271581188088/i/1654229952604.jpg" alt="img-20">
+
+<!--ROW 8--> 
+          <img src="https://i.pinimg.com/1200x/0a/e3/2f/0ae32f4b015d7f56096c3f8501c3abc1.jpg" alt="img-21">
+          <img src="https://i.pinimg.com/564x/6b/c3/d5/6bc3d549dc6e69a51cce92010fd1ee45.jpg" alt="img-22">
+          <img src="https://i.pinimg.com/originals/4d/ab/b0/4dabb0820b9e269858ae4031e55208bc.jpg" alt="img-23">
+        </div>
+      </section>
+
+<!--CREDITS-->       
+<div class="credits">
+  <p>Content taken from <a href="https://aesthetics.fandom.com/wiki/Weirdcore
+" target:"_blank">aesthetics.fandom.com</a> and 
+<a href="https://screenshot-media.com/culture/internet-culture/weirdcore-explained/
+" target:"_blank">screenshot-media.com</a></p>
+</div>
+    </main>
+  </body>
+
+</html>

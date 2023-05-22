@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+html{
+  background-color:#22a4f3;
+}
+
+body{
+  background-color:  #00529b;
+  margin: 0 auto;
+  min-width: 250px;
+  max-width: 550px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 0 0 5px 1px black;
+  font-family: 'Patrick Hand', cursive, arial;
+  font-size: 20px;
+}
+
+h1, p{
+  margin: 10px auto;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  text-shadow: 0px 0px 5px  black;
+}
+
+h1{
+  font-family: 'DynaPuff', cursive, arial;
+}
+
+p{
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size:26px;
+  width:300px;
+}
+
+form{
+  margin: 0 auto;
+  text-align: left;
+  min-width: 200px;
+  max-width:500px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 3px  black;
+}
+
+label{
+  display: block;
+  margin-top:5px;
+  font-size: 24px;
+}
+
+.question{
+  margin-top:30px;
+  margin-bottom:10px;
+}
+
+input[type="text"], input[type="email"], input[type="number"]{
+  display: block;
+  margin-top:5px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Patrick Hand', cursive, arial;
+  border-radius: 10px;
+  border: 3px solid #003164;
+  box-shadow: 0 0 3px 1px black;
+}
+
+select{
+  display: block;
+  margin-top:5px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Patrick Hand', cursive, arial;
+  border-radius: 10px;
+  border: 3px solid #003164;
+  box-shadow: 0 0 3px 1px black;
+}
+
+ label:not(.question):hover {
+    font-weight: bold;
+  }
+
+  label:not(.question) {
+    font-size:20px;
+  }
+
+textarea{
+  display: block;
+  margin-top:5px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  border: 3px solid #003164;
+  color: black;
+  font-size:20px;
+  width: 100%;
+  font-family: 'Patrick Hand', cursive, arial;
+  box-shadow: 0 0 3px 1px black;
+}
+
+input[type="submit"]{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  font-family: 'DynaPuff', cursive, arial;
+  font-size:25px;
+  color: white;
+  background: linear-gradient(#1f89ce 5%, #0051ae 50%,#1f89ce 95%);
+  border: 3px solid #003164;
+  border-radius: 15px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  box-shadow: 0 0 3px 1px black;
+  text-shadow: 0px 0px 5px  black;
+}
+
+input[type="submit"]:hover{
+  scale: 1.02;
+  transition: 0.5s;
+}
+
+</style>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Adopt a Puffle</title>
+</head>
+<body>
+  <h1 id="title">Adopt a Puffle</h1>
+  <p id="description">Find the perfect cute furball friend for you!!!</p>
+<!--FORM-->
+  <form id="survey-form">
+<!--FORM: NAME-->
+    <label for="name" id="name-label" class="question">Enter Your Name:
+      <input id="name" type="text" placeholder="Guilbert1808" required>
+    </label>
+<!--FORM: EMAIL-->
+    <label for="email" id="email-label" class="question">Enter Your Email:
+      <input id="email" type="email" placeholder="guilbert@gmail.com" required>
+    </label>
+<!--FORM: AGE-->
+    <label for="number" id="number-label" class="question">Enter Your Age (years):
+      <input id="number" type="number" min="5" max="120" placeholder="23">
+    </label>
+<!--FORM: COLOR-->
+    <label for="dropdown" class="question">Which Puffle Do You Want?
+      <select id="dropdown" name="dropdown">
+        <option value="">(Choose Color)</option>
+        <option value="1">Black</option>
+        <option value="2">Blue</option>
+        <option value="3">Brown</option>
+        <option value="4">Gold</option>
+        <option value="5">Green</option>
+        <option value="6">Orange</option>
+        <option value="7">Pink</option>
+        <option value="8">Purple</option>
+        <option value="9">Rainbow</option>
+        <option value="10">Red</option>
+        <option value="11">White</option>
+        <option value="12">Yellow</option>
+      </select>
+    </label>
+<!--FORM: OTHER PUFFLES-->
+<label class="question">Do You Have Any Other Puffles?
+</label>
+    <label for="dont-have">
+      <input type="radio" name="more-puffles" id="dont-have" class="inline" value="1" checked> I don't have other Puffles
+    </label>
+
+    <label for="have">
+      <input type="radio" name="more-puffles" id="have" class="inline" value="2"> I have other Puffles
+    </label>
+<!--FORM: OTHER PUFFLES COLORS-->
+<label class="question">Which Other Puffles Do You Have?
+</label>
+    <label>
+      <input type="checkbox" class="inline" value="1" id="option"> I don't have other Puffles
+    </label>
+    <label>
+      <input type="checkbox" class="inline" value="2"> Black
+    </label>
+    <label>
+      <input type="checkbox" class="inline" value="3"> Blue
+    </label>
+    <label>
+      <input type="checkbox" class="inline" value="4"> Brown
+    </label>
+    <label>
+      <input type="checkbox" class="inline" value="5"> Gold
+    </label>
+    <label>
+      <input type="checkbox" class="inline" value="6"> Green
+    </label>
+    <label>
+      <input type="checkbox" class="inline" value="7"> Orange
+    </label>
+    <label>
+      <input type="checkbox" class="inline" value="8"> Pink
+    </label>
+    <label>
+      <input type="checkbox" class="inline" value="9"> Purple
+    </label>
+    <label>
+      <input type="checkbox" class="inline" value="10"> Rainbow
+    </label>
+    <label>
+      <input type="checkbox" class="inline" value="11"> Red
+    </label>
+    <label>
+      <input type="checkbox" class="inline" value="12"> White
+    </label>
+    <label>
+      <input type="checkbox" class="inline" value="13"> Yellow
+    </label>
+<!--FORM: COMMENTS-->
+<label class="question">
+Additional Comments:
+</label>
+    <label for="comments">
+      <textarea id="comments" name="comments" placeholder="I love Puffles..." rows="3" cols="30"></textarea>
+    </label>
+<!--FORM: SUBMIT-->
+    <input id="submit" type="submit" value="Adopt Puffle">
+  </form>
+
+</body>
+</html>

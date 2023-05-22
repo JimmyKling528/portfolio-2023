@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Instant Noodles</title>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img id="header-img" src="https://lh3.googleusercontent.com/z7sOwsz66bYSHlkk5fUebwFc6QDuelIzEFds_hX1FvFJZxSzXWQ-dfjeq5ogt3FK_73g0K2CQUx-ZWVvG2kwb1a4M7PL6AI1-sinHcuww5d0zizPuHbnrp808d5FYgs5tQNiGJJYaA=w2400?source=screenshot.guru" alt="instant-noodles-logo"/>
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#About">About</a></li>
+            <li><a class="nav-link" href="#How_To_Make">How To Make</a></li>
+            <li><a class="nav-link" href="#Pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container"></div>
+      <section id="hero">
+        <h2>A gourmet meal for college students and others oppressed by debt</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+        <input id="submit" type="submit" value="Get Noodles" class="btn">
+        </form>
+      </section>
+      <div class="container">
+        <section id="About">
+          <div class="grid">
+            <div class="desc what">
+              <h2>What Are Instant Noodles?</h2>
+              <p>Instant noodles were invented by Momofuku Ando of Nissin Foods in Japan. They were launched in 1958 under the brand name Chikin Ramen. In 1971, Nissin introduced Cup Noodles, the first cup noodle product. Instant noodles are marketed worldwide under many brand names.</p>
+            </div>
+          </div>
+          
+          <div class="grid">
+            <div class="desc when">
+              <h2>When Were Invented?</h2>
+              <p>Instant noodles were invented by Momofuku Ando of Nissin Foods in Japan. They were launched in 1958 under the brand name Chikin Ramen. In 1971, Nissin introduced Cup Noodles, the first cup noodle product. Instant noodles are marketed worldwide under many brand names.</p>
+            </div>
+          </div>
+          
+          <div class="grid">
+            <div class="desc ingredients">
+              <h2>Main Ingredients</h2>
+              <p>The main ingredients in instant noodles are flour, starch, water, salt and/or kansui (a type of alkaline mineral water containing sodium carbonate and usually potassium carbonate), and sometimes a small amount of phosphoric acid. Common ingredients in the flavoring powder are salt, monosodium glutamate, seasoning, and sugar. The flavoring is usually in a separate packet, although in the case of cup noodles, it is often loose in the cup. Some instant noodle products are seal-packed; these can be reheated or eaten straight from the packet/container.</p>
+          </div>
+        </section>
+        <section id="How_To_Make">
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/QbXLH5sIK2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+  <section id="Pricing">
+    <div class="product" id="chicken">
+      <div class="level">Chicken Noodles</div>
+      <h2>1$</h2>
+      <button class="btn">Select</button>
+    </div>
+    <div class="product" id="meat">
+      <div class="level">Meat Noodles</div>
+      <h2>1.5$</h2>
+      <button class="btn">Select</button>
+    </div>
+    <div class="product" id="bacon">
+      <div class="level">Bacon Noodles</div>
+      <h2>1.5$</h2>
+      <button class="btn">Select</button>
+    </div>
+  </section>
+  <footer>
+    <ul>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <span>Copyright 2022, Practicing Code with Noodles</span>
+  </footer>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara&display=swap');
+
+@media (max-width: 800px)
+{
+  .product
+  {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  #pricing
+  {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px)
+{
+  header
+  {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 650px)
+{
+  .logo
+  {
+    margin-top: 5px;
+    width:100%;
+    position:relative;
+  }
+  .logo > img
+  {
+    margin: 0 auto;
+  }
+  nav
+  {
+    margin-top:10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li
+  {
+    padding-bottom: 5px;
+  }
+  nav > ul
+  {
+    flex-direction: column;
+  }
+  #hero
+  {
+    margin-top:120px;
+  }
+  #About
+  {
+    margin-top: 0;
+    overflow-wrap: break-word;
+    
+  }
+  #About .desc
+  {
+    padding-top:50px;
+    height: 300px;
+    padding: 50px;
+    overflow-wrap: break-word;
+    
+    
+  }
+
+    .grid
+  {
+    
+    padding-top:200px;
+    
+  }
+
+  .what
+{
+  margin-top:5px;
+}
+
+.when
+{
+  margin-top:100px;
+}
+
+.ingredients
+{
+  margin-top:100px;
+  margin-bottom: 50px;
+}
+}
+
+@media (max-width: 550px)
+{
+  #About .desc
+  {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    height: 150px;
+    
+  }
+      .grid
+  {
+    
+    padding-top:300px;
+  }
+  .what
+{
+  margin-top:20px;
+}
+
+.when
+{
+  margin-top:100px;
+}
+
+.ingredients
+{
+  margin-top:200px;
+  margin-bottom: 100px;
+}
+}
+
+
+
+*
+{
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  background-color: #FFFCF6;
+  font-family: Hind Vadodara, sans-serif;
+}
+
+#page-wrapper
+{
+  position: relative;
+}
+
+li
+{
+  list-style: none;
+}
+
+a
+{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #FFFCF6;
+  font-weight:800;
+}
+
+.container
+{
+  max-width:1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn
+{
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px solid black;
+  border-radius: 4px;
+  background-color: #FFCF68;
+  cursor: pointer;
+}
+
+.btn:hover
+{
+  background-color: #FFC64D;
+  
+}
+
+.grid
+{
+  display: flex;
+  padding-top:50px;
+}
+
+header
+{
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFCF68;
+}
+
+.logo
+{
+  width: 60vw;
+}
+
+.logo > img
+{
+  width: 100%;
+  height: 100%;
+  max-width:300px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 5px;
+}
+
+nav
+{
+  font-weight: 400;
+}
+
+nav > ul
+{
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#hero
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 70px;
+}
+
+#hero > h2
+{
+  margin-bottom: 20px;
+  word-wrap: break word;
+}
+
+#hero input[type='email']
+{
+  max-width:275px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom:10px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+
+#About
+{
+  margin-top: 50px;
+}
+
+#About .desc
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+  width: 80vw;
+  padding: 10px;
+}
+
+#How_To_Make
+{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+#How_To_Make > iframe
+{
+  max-width: 560px;
+  width: 100%;
+}
+
+#pricing
+{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /*width: calc (100%/3);*/
+  width: 300px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.product > .level
+{
+  background-color:#FFCF68;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight:700;
+}
+
+.product > h2
+{
+  margin-top: 15px;
+}
+
+.product > button
+{
+  margin: 15px 0;
+  background-color: #FFCF68;
+  font-weight: 400;
+  border: 3px solid black;
+  border-radius:4px;
+}
+
+.product > button:hover
+{
+  background-color: #FFC64D;
+  
+}
+
+footer
+{
+  margin-top: 30px;
+  background-color:#FFCF68;
+  padding: 20px;
+
+}
+
+footer > ul
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li
+{
+  padding: 0 10px;
+}
+
+footer > span
+{
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: black;
+}
+
+/*.what
+{
+  margin-top:5px;
+}
+
+.when
+{
+  margin-top:100px;
+}
+
+.ingredients
+{
+  margin-top:100px;
+  margin-bottom: 50px;
+}*/
+</style>

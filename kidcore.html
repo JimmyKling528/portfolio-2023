@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+html{
+  background-color: #6e0dd0;
+  background: url("https://static.tumblr.com/b2fa0f7ed64c971d8e089efa67888a7b/48n7vs2/NTKoxq9pl/tumblr_static_tumblr_static__focused_v3.gif");
+  background-size: cover;
+  color: white;
+  font-family: 'Bubblegum Sans', cursive;
+  cursor: crosshair;
+}
+
+/*SCROLL BAR*/
+::-webkit-scrollbar {
+  width: 10px;
+  box-shadow: 0 0 3px black;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(#6e0dd0, #00f9ff, #15ff00, #efff00, #ff00a6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* IMAGES ABOUT  */
+#what_is_kidcore .images-about img{
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+/* LIST: HOVER*/
+main li:hover{
+  color: #efff00;
+}
+
+/* IMAGES: HOVER*/
+img{
+  transition: 0.5s;
+}
+
+img:not(.sparkles, .star, .mushrooms, .penguin):hover{
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+/* LOGO */
+.logo{
+  width: 100px;
+  margin-left: 20px;
+}
+
+/* SPARKLES */
+.container { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sparkles{
+  width: 100px;
+}
+
+/* IMAGES */
+#images .images{
+  width: 200px;
+  box-shadow: 0 0 3px black;
+}
+
+.many-images{
+  margin-bottom: 20px;
+}
+
+/* FORM */
+input[type="email"]::placeholder{
+  font-family: 'Bubblegum Sans', cursive;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+input[type="email"]{
+  font-family: 'Bubblegum Sans', cursive;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+input[type="submit"]{
+  font-family: 'Sigmar One', cursive;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+form{
+  background-color: #6e0dd0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  padding: 20px;
+}
+
+#form{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-section{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#email{
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 5px #efff00;
+  background-color: #00f9ff;
+  color: black;
+  box-shadow: 0 0 5px black;
+  
+}
+
+#email::placeholder{
+  color: black;
+}
+
+#submit{
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 5px #efff00;
+  background-color: #00f9ff;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 5px black;
+  transition: 0.5s;
+  text-shadow: 0 0 1px black;
+}
+
+#submit:hover{
+  scale: 1.1;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* HEADER */
+#header{
+  position: fixed;
+  background-color: #ff00a6;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  box-shadow: 0 0 5px black;
+  z-index: 9999;
+}
+
+/* MENU */
+#nav-bar ul {
+  list-style: none;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  display: flex;
+}
+
+#nav-bar li {
+  margin-right: 20px;
+  margin-left: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 3px black;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+#nav-bar a:hover {
+  text-decoration: none;
+  color: #15ff00;
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+
+/* MAIN LISTS */
+main{
+  text-align: center;
+}
+
+main ul li{
+  text-align: left;
+}
+
+/* VIDEO */
+#video{
+  border: solid 5px #efff00;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  margin-bottom: 20px;
+}
+
+/* WARNING */
+#warning h1{
+  font-size: 70px;
+  text-decoration: underline;
+}
+
+.container-warning p{
+  font-size: 40px;
+}
+
+.container-warning{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#warning .images-about img{
+  width: 500px;
+  margin-bottom: 0px;
+}
+
+/* VISUAL */
+.container-visual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#visual .images-visual{
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+#visual .images-visual img{
+  width: 200px; 
+  margin-right: 50px;
+  box-shadow: 0 0 3px black;
+}
+
+/* FASHION */
+.container-fashion {
+  display: flex;
+  justify-content: space-between;
+}
+
+#fashion .images-fashion{
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+#fashion .images-fashion img{
+  width: 250px;
+  margin-right: 50px;
+  box-shadow: 0 0 3px black;
+
+}
+
+#fashion .images-fashion-bottom img{
+  width: 300px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+/* ARCHITECTURE */
+#architecture .images-architecture img{
+  width: 300px;
+  margin-right: 10px;
+  box-shadow: 0 0 3px black;
+  margin-bottom: 20px;
+}
+
+/* SECTIONS */
+
+#warning, #what_is_kidcore, #visual, #fashion, #architecture, #images, #music{
+  margin-top: 50px;
+  background-color: #6e0dd0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+#warning{
+  margin-top: 80px;
+}
+
+#warning, #what_is_kidcore, #visual, #fashion, #architecture, #images, #music p{
+  font-family: 'Bubblegum Sans', cursive;
+  letter-spacing: 1px;
+  font-size: 25px;
+  text-shadow: 0 0 3px black;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+h1{
+  font-family: 'Sigmar One', cursive;
+  letter-spacing: 1px;
+  font-size: 40px;
+  text-shadow: 0 0 5px black;
+}
+
+/* CREDITS */
+.credits{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: 'Bubblegum Sans', cursive;
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-shadow: 0 0 3px black; 
+  background-color: #6e0dd0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+}
+
+.container-credits { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star{
+  width: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.credits a{
+  color: #00f9ff;
+  text-decoration: none;
+}
+
+.credits a:hover{
+  color: #efff00;
+}
+
+/*************************************************************/
+/* SCREEN SIZE 320PX - 480PX*/
+@media screen and (min-width: 320px) and (max-width: 480px){
+  html{
+    background-color: #6e0dd0;
+    background: url("https://static.tumblr.com/b2fa0f7ed64c971d8e089efa67888a7b/48n7vs2/NTKoxq9pl/tumblr_static_tumblr_static__focused_v3.gif");
+    background-size: cover;
+    color: white;
+    font-family: 'Bubblegum Sans', cursive;
+    cursor: crosshair;
+  }
+
+/* WARNING */
+#warning{
+  margin-top: 130px;
+}
+
+#warning h1{
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.container-warning p{
+  font-size: 20px;
+}
+
+.container-warning{
+  display: block;
+}
+
+#warning .images-about img{
+  width: 200px;
+  margin-bottom: 0px;
+}
+
+  /* SECTIONS */
+  #warning, #what_is_kidcore, #visual, #fashion, #architecture, #images, #music p{
+    font-family: 'Bubblegum Sans', cursive;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-shadow: 0 0 3px black;
+    padding-left:5px;
+    padding-right:5px;
+  }
+
+  h1{
+    font-family: 'Sigmar One', cursive;
+    letter-spacing: 1px;
+    font-size: 30px;
+    text-shadow: 0 0 5px black;
+  }
+
+  /* CREDITS */
+  .credits{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Bubblegum Sans', cursive;
+    letter-spacing: 1px;
+    font-size: 10px;
+    text-shadow: 0 0 3px black; 
+    background-color: #6e0dd0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+  }
+
+  .star{
+    width: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+/* VIDEO */
+  #video{
+    border: solid 5px #efff00;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+  }
+
+/* MENU */
+  #nav-bar ul {
+    list-style: none;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: block;
+  }
+
+  #nav-bar li {
+    margin-right: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 3px black;
+  }
+
+  #nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+
+  #nav-bar a:hover {
+    text-decoration: none;
+    color: #15ff00;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+
+  /* IMAGES ABOUT  */
+  #what_is_kidcore .images-about img{
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  /* SPARKLES */
+  .container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sparkles{
+    width: 50px;
+    }
+
+/* IMAGES */
+  #images .images{
+    width: 100px;
+    box-shadow: 0 0 3px black;
+  }
+
+  .many-images{
+    margin-bottom: 20px;
+  }
+
+/* FORM */
+  input[type="email"]::placeholder{
+    font-family: 'Bubblegum Sans', cursive;
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+
+  input[type="email"]{
+    font-family: 'Bubblegum Sans', cursive;
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+
+  input[type="submit"]{
+    font-family: 'Sigmar One', cursive;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+
+  form{
+    background-color: #6e0dd0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    padding: 10px;
+  }
+  #form-section{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* VISUAL */
+  .container-visual {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #visual .images-visual{
+    margin-right: 0px;
+  }
+
+  #visual .images-visual img{ 
+    width: 150px; 
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 3px black;
+  }
+
+/* FASHION */
+  .container-fashion {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  #fashion .images-fashion{
+    margin-right: 0px;
+    margin-top: 50px;
+  }
+
+  #fashion .images-fashion img{
+    width: 200px;
+    margin-right: 0px;
+    box-shadow: 0 0 3px black;
+    margin-top: 15px; 
+  }
+
+  #fashion .images-fashion-bottom img{
+    width: 200px;
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+/* ARCHITECTURE */
+  #architecture .images-architecture img{
+    width: 200px;
+  }
+
+/* IMAGES: HOVER*/
+  img{
+    transition: 0.5s;
+  }
+
+  img:not(.sparkles, .star, .mushrooms, .penguin):hover{
+    scale: 1;
+    transition: 0.5s;
+  }
+
+}
+
+/*************************************************************/
+/* SCREEN SIZE 600PX - 800PX*/
+@media screen and (min-width: 600px) and (max-width: 800px){
+  html{
+    background-color: #6e0dd0;
+    background: url("https://static.tumblr.com/b2fa0f7ed64c971d8e089efa67888a7b/48n7vs2/NTKoxq9pl/tumblr_static_tumblr_static__focused_v3.gif");
+    background-size: cover;
+    color: white;
+    font-family: 'Bubblegum Sans', cursive;
+    cursor: crosshair;
+  }
+/* WARNING */
+#warning h1{
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+.container-warning p{
+  font-size: 20px;
+}
+
+.container-warning{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#warning .images-about img{
+  width: 200px;
+  margin-bottom: 0px;
+}
+
+
+  /* SECTIONS */
+  #warning, #what_is_kidcore, #visual, #fashion, #architecture, #images, #music p{
+    font-family: 'Bubblegum Sans', cursive;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-shadow: 0 0 3px black;
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  h1{
+    font-family: 'Sigmar One', cursive;
+    letter-spacing: 1px;
+    font-size: 35px;
+    text-shadow: 0 0 5px black;
+  }
+
+  /* CREDITS */
+  .credits{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Bubblegum Sans', cursive;
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-shadow: 0 0 3px black; 
+    background-color: #6e0dd0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+  }
+
+  .star{
+    width: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+/* VIDEO */
+  #video{
+    border: solid 5px #efff00;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 250px;
+  }
+
+/* MENU */
+  #nav-bar ul {
+    list-style: none;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+  }
+
+  #nav-bar li {
+    margin-right: 10px;
+    margin-left: 2px;
+    margin-top: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 3px black;
+  }
+
+  #nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+
+  #nav-bar a:hover {
+    text-decoration: none;
+    color: #15ff00;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+
+  /* IMAGES ABOUT  */
+  #what_is_kidcore .images-about img{
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  /* SPARKLES */
+  .container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sparkles{
+    width: 100px;
+    }
+
+/* IMAGES */
+  #images .images{
+    width: 150px;
+    box-shadow: 0 0 3px black;
+  }
+
+  .many-images{
+    margin-bottom: 20px;
+  }
+
+/* FORM */
+  input[type="email"]::placeholder{
+    font-family: 'Bubblegum Sans', cursive;
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+
+  input[type="email"]{
+    font-family: 'Bubblegum Sans', cursive;
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+
+  input[type="submit"]{
+    font-family: 'Sigmar One', cursive;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+
+  form{
+    background-color: #6e0dd0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    padding: 10px;
+  }
+  #form-section{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* VISUAL */
+  .container-visual {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #visual .images-visual{
+    margin-right: 0px;
+  }
+
+  #visual .images-visual img{ 
+    width: 150px; 
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 3px black;
+  }
+
+/* FASHION */
+  .container-fashion {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  #fashion .images-fashion{
+    margin-right: 0px;
+    margin-top: 50px;
+  }
+
+  #fashion .images-fashion img{
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: 0 0 3px black;
+    margin-top: 15px; 
+  }
+
+  #fashion .images-fashion-bottom img{
+    width: 200px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+  }
+/* ARCHITECTURE */
+  #architecture .images-architecture img{
+    width: 200px;
+  }
+
+/* IMAGES: HOVER*/
+  img{
+    transition: 0.5s;
+  }
+
+  img:not(.sparkles, .star, .mushrooms, .penguin):hover{
+    scale: 1;
+    transition: 0.5s;
+  }
+
+}
+
+/*************************************************************/
+/* SCREEN SIZE 1024PX - 1280PX*/
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+  html{
+    background-color: #6e0dd0;
+    background: url("https://static.tumblr.com/b2fa0f7ed64c971d8e089efa67888a7b/48n7vs2/NTKoxq9pl/tumblr_static_tumblr_static__focused_v3.gif");
+    background-size: cover;
+    color: white;
+    font-family: 'Bubblegum Sans', cursive;
+    cursor: crosshair;
+  }
+
+/* WARNING */
+#warning h1{
+  font-size: 70px;
+  text-decoration: underline;
+}
+
+.container-warning p{
+  font-size: 40px;
+}
+
+.container-warning{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#warning .images-about img{
+  width: 400px;
+  margin-bottom: 0px;
+}
+
+
+  /* SECTIONS */
+
+#warning, #what_is_kidcore, #visual, #fashion, #architecture, #images, #music{
+  margin-top: 50px;
+  background-color: #6e0dd0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+#warning{
+  margin-top: 80px;
+}
+
+#warning, #what_is_kidcore, #visual, #fashion, #architecture, #images, #music p{
+  font-family: 'Bubblegum Sans', cursive;
+  letter-spacing: 1px;
+  font-size: 25px;
+  text-shadow: 0 0 3px black;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+h1{
+  font-family: 'Sigmar One', cursive;
+  letter-spacing: 1px;
+  font-size: 40px;
+  text-shadow: 0 0 5px black;
+}
+
+/* CREDITS */
+.credits{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: 'Bubblegum Sans', cursive;
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-shadow: 0 0 3px black; 
+  background-color: #6e0dd0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+}
+
+.container-credits { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star{
+  width: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.credits a{
+  color: #00f9ff;
+  text-decoration: none;
+}
+
+.credits a:hover{
+  color: #efff00;
+}
+
+/* VIDEO */
+#video{
+  border: solid 5px #efff00;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  margin-bottom: 20px;
+}
+
+/* MENU */
+#nav-bar ul {
+  list-style: none;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  display: flex;
+}
+
+#nav-bar li {
+  margin-right: 20px;
+  margin-left: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 3px black;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+#nav-bar a:hover {
+  text-decoration: none;
+  color: #15ff00;
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+
+/* IMAGES ABOUT  */
+#what_is_kidcore .images-about img{
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+/* SPARKLES */
+.container { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sparkles{
+  width: 100px;
+}
+
+/* IMAGES */
+#images .images{
+  width: 200px;
+  box-shadow: 0 0 3px black;
+}
+
+.many-images{
+  margin-bottom: 20px;
+}
+
+/* FORM */
+input[type="email"]::placeholder{
+  font-family: 'Bubblegum Sans', cursive;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+input[type="email"]{
+  font-family: 'Bubblegum Sans', cursive;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+input[type="submit"]{
+  font-family: 'Sigmar One', cursive;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+form{
+  background-color: #6e0dd0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  padding: 20px;
+}
+
+#form{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#form-section{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#email{
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 5px #efff00;
+  background-color: #00f9ff;
+  color: black;
+  box-shadow: 0 0 5px black;
+  
+}
+
+#email::placeholder{
+  color: black;
+}
+
+#submit{
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 5px #efff00;
+  background-color: #00f9ff;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 5px black;
+  transition: 0.5s;
+  text-shadow: 0 0 1px black;
+}
+
+#submit:hover{
+  scale: 1.1;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* VISUAL */
+.container-visual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#visual .images-visual{
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+#visual .images-visual img{
+  width: 150px; 
+  margin-right: 50px;
+  box-shadow: 0 0 3px black;
+}
+
+/* FASHION */
+.container-fashion {
+  display: flex;
+  justify-content: space-between;
+}
+
+#fashion .images-fashion{
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+#fashion .images-fashion img{
+  width: 150px;
+  margin-right: 0px;
+  box-shadow: 0 0 3px black;
+
+}
+
+#fashion .images-fashion-bottom img{
+  width: 150px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+
+/* ARCHITECTURE */
+#architecture .images-architecture img{
+  width: 200px;
+  margin-right: 10px;
+  box-shadow: 0 0 3px black;
+  margin-bottom: 20px;
+}
+
+/* IMAGES: HOVER*/
+img{
+  transition: 0.5s;
+}
+
+  img:not(.sparkles, .star, .mushrooms, .penguin):hover{
+    scale: 1.1;
+    transition: 0.5s;
+  }
+
+}
+
+/*************************************************************/
+/* SCREEN SIZE 1440PX - 1920PX*/
+@media screen and (min-width: 1440px) and (max-width: 1920px){
+  html{
+    background-color: #6e0dd0;
+    background: url("https://static.tumblr.com/b2fa0f7ed64c971d8e089efa67888a7b/48n7vs2/NTKoxq9pl/tumblr_static_tumblr_static__focused_v3.gif");
+    background-size: cover;
+    color: white;
+    font-family: 'Bubblegum Sans', cursive;
+    cursor: crosshair;
+  }
+
+}
+
+/*************************************************************/
+/* SCREEN SIZE 2560PX - 4000PX*/
+@media screen and (min-width: 2560px) and (max-width: 4000px){
+  html{
+    background-color: #6e0dd0;
+    background: url("https://static.tumblr.com/b2fa0f7ed64c971d8e089efa67888a7b/48n7vs2/NTKoxq9pl/tumblr_static_tumblr_static__focused_v3.gif");
+    background-size: cover;
+    color: white;
+    font-family: 'Bubblegum Sans', cursive;
+    cursor: crosshair;
+  }
+
+}
+</style>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Kidcore Aesthetic</title>
+  </head>
+
+  <body>
+  <main>
+    <header id="header">
+<!-- LOGO -->
+      <img class="logo" src="https://gifs.eco.br/wp-content/uploads/2022/07/gifs-de-arco-iris-5.gif" id="header-img" alt="logo">
+<!-- MENU -->
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#what_is_kidcore">What is Kidcore?</a></li>
+          <li><a class="nav-link" href="#visual">Visual</a></li>
+          <li><a class="nav-link" href="#fashion">Fashion</a></li>
+          <li><a class="nav-link" href="#architecture">Architecture</a></li>
+          <li><a class="nav-link" href="#images">Images</a></li>
+          <li><a class="nav-link" href="#music">Music</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<!-- WARNING --> 
+    <section id="warning">
+      <div class="container">
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      <h1>Warning</h1>
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      </div>
+
+      <div class="container-warning">
+      <p>This page has been styled according to the Kidcore Aesthetic and old websites that were known for their vibrant colors and the use of many GIFs.</p>
+
+      <div class="images-about">
+        <img class="penguin" src="https://66.media.tumblr.com/33d5fb884ba350b0495501625d07da03/tumblr_mqatxtNyuW1rfjowdo1_500.gif" alt="penguin-gif">
+      </div>
+      </div>
+    </section>
+
+<!-- WHAT IS KIDCORE --> 
+    <section id="what_is_kidcore">
+      <div class="container">
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      <h1>What is Kidcore?</h1>
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      </div>
+      <p>Kidcore is an aesthetic that centers around bright colors, nostalgia for icons from the 90s, and kid themes. While its origins can be traced back to the 70s, 80s, 90s, and 2000s, it appears the aesthetic is a nostalgia-based creation of the 2010s.</p>
+
+      <div class="images-about">
+        <img class="mushrooms" src="https://i.pinimg.com/originals/df/05/f5/df05f589cef354160ad93a5a17f3b4aa.gif" alt="mushrooms-gif">
+      </div>
+    </section>
+
+<!-- VISUAL --> 
+    <section id="visual">
+      <div class="container">
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      <h1>Visual</h1>
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      </div>
+
+      <p>Common motifs in Kidcore visuals are bright colors frequently used on children's toys, most frequently highly saturated versions of the traditional primary colors (red, yellow, and blue), playgrounds, stuffed animals such as Beanie Babies and TY, robot pets like Furbies, Lisa Frank artwork, rainbows, and other kid themes. Other common themes involved in Kidcore include:</p>
+
+      <div class="container-visual">
+      <ul>
+        <li>Bedtime stories</li>
+        <li>Books</li>
+        <li>Colorful bookshelves</li>
+        <li>Watercolors and detailed linework</li>
+        <li>Rabbits, squirrels and mice</li>
+        <li>Alphabet blocks</li>
+        <li>Games Cupboard</li>
+        <li>Balloons</li>
+        <li>Fidget toys</li>
+        <li>Frogs</li>
+      </ul>
+
+        <div class="images-visual">
+          <img src="https://i.pinimg.com/564x/25/40/ea/2540eaf76bc29bb352ccb1c8d866e58a.jpg" alt="img-v-1" style="transform: rotate(-20deg);">
+          <img src="https://i.pinimg.com/564x/5a/fa/83/5afa838ed7bd0e347a4efd7954375fe7.jpg" alt="img-v-2">
+          <img src="https://i.pinimg.com/564x/e8/8e/31/e88e31af1e4d1b02aaa3b2113be7efcf.jpg" alt="img-v-3" style="transform: rotate(20deg);">
+        </div>
+      </div>
+    </section>
+
+<!-- FASHION --> 
+    <section id="fashion">
+      <div class="container">
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      <h1>Fashion</h1>
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      </div>
+
+      <p>Kidcore fashion is typically colorful and highly saturated, and predominantly utilizes the traditional primary colors, but it does sometimes include neutrals, secondary colors and pastels. Fashion pieces include:</p>
+
+      <div class="container-fashion">
+      <ul>
+        <li>Collared shirts</li>
+        <li>Light-up shoes, old sneakers</li>
+        <li>Denim overalls (preferably short)</li>
+        <li>Tee-shirts of kids shows/simple patterns/animals</li>
+        <li>Striped socks, stockings, or knee/ankle-high socks</li>
+        <li>Denim shorts/jeans adorned with stickers/glitter</li>
+        <li>Puffy sleeves</li>
+        <li>Overalls or suspenders</li>
+        <li>High-tops</li>
+        <li>Baseball tees</li>
+        <li>Jeans</li>
+        <li>Pajamas</li>
+        <li>Earrings</li>
+        <li>Friendship necklaces</li>
+        <li>Bandages</li>
+        <li>Kandi</li>
+        <li>A stuffed animal/plushie</li>
+        <li>Temporary tattoos</li>
+        <li>Slap on bracelets</li>
+        <li>Rainbow loom</li>
+        <li>Stickers</li>
+      </ul>
+        <div class="images-fashion">
+          <img src="https://i.pinimg.com/564x/f0/65/1d/f0651d40c885a6828fabbbd5139c3514.jpg" alt="img-f-1" >
+          <img src="https://i.pinimg.com/564x/5b/82/e3/5b82e3913b3a76b6d17314e5fe76aecf.jpg" alt="img-f-2">
+          <div class="images-fashion-bottom">
+            <img src="https://i.pinimg.com/564x/ba/f9/9d/baf99d6afe263dfdd359b90e63e58408.jpg" alt="img-f-3">
+            <img src="https://i.pinimg.com/564x/ad/b6/76/adb676e9c23942c2d1dda49d633d5709.jpg" alt="img-f-4">
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ARCHITECTURE --> 
+    <section id="architecture">
+      <div class="container">
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      <h1>Architecture</h1>
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      </div>
+
+      <p>The architectural variants of kidcore - known as "Wonka Post-Modern", or "Memphis Jr." due to it being inspired by the 1980s Memphis aesthetic - predate the rest of the genre, and can be said to have inspired the 2010s popularity via nostalgia. Examples typically come from theme parks and stores which market goods to children such as Toys 'R' Us and Gymboree.</p>
+
+      <div class="images-architecture">
+        <img src="https://nano.scrolller.com/first-post-i-made-it-look-vhs-like-tw-may-cause-5ihne00a7s.png" alt="img-a-1">
+        <img src="https://64.media.tumblr.com/86ff7cf468287e8ac8bd4768324cf2ab/3f7131a4d67f95ab-00/s540x810/f6e72dd2d13478472e6cbeba18071b56981affec.jpg" alt="img-a-2">
+        <img src="https://64.media.tumblr.com/fa79429f3f5781f4ce8eab310a3b4598/tumblr_ox2d6uEIz41w9f15eo2_400.jpg" alt="img-a-3">
+        <img src="https://bridalshower101.com/wp-content/uploads/2021/06/Screen-Shot-2021-06-04-at-1.36.39-PM.png" alt="img-a-4">
+      </div>
+    </section>
+
+<!-- IMAGES --> 
+    <section id="images">
+      <div class="container">
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      <h1>Kidcore Images</h1>
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      </div>
+
+      <div class="many-images">
+      <img class="images" src="https://i.pinimg.com/564x/bf/8d/cb/bf8dcb778553df862d1cb11e01cae127.jpg" alt="img-1">
+      <img class="images" src="https://i.pinimg.com/564x/68/27/26/682726253fadf4e4a0dc8125af9e3f20.jpg" alt="img-2">
+      <img class="images" src="https://i.pinimg.com/564x/ba/c4/26/bac4265f8232c3215b2c682e8077f9cf.jpg" alt="img-3">
+      <img class="images" src="https://i.pinimg.com/564x/64/c5/35/64c53564a7f8a4288d14b6636fb3f759.jpg" alt="img-4">
+      <img class="images" src="https://i.pinimg.com/564x/80/51/7a/80517a374625b318d9245f2cd82f9c49.jpg" alt="img-5">
+      <img class="images" src="https://i.pinimg.com/564x/85/2e/8d/852e8d2160ddef45e15ad5c3a3ea7c71.jpg" alt="img-6">
+
+
+      <img class="images" src="https://i.pinimg.com/750x/4d/c1/e3/4dc1e3ae21bf5cd93b900fb8e6d95c22.jpg" alt="img-7">
+      <img class="images" src="https://i.pinimg.com/564x/ba/31/e7/ba31e7c4c87afc3fa739c30bf1b46266.jpg" alt="img-8">
+      <img class="images" src="https://i.pinimg.com/564x/ed/6c/4e/ed6c4edf9c7d5e47970c56191cb24f78.jpg" alt="img-9">
+      <img class="images" src="https://i.pinimg.com/564x/4c/1e/b7/4c1eb75364cc7fbf75f2ad6e3a2816ef.jpg" alt="img-10">
+      <img class="images" src="https://i.pinimg.com/564x/b6/82/fe/b682fe70f077a6f51cda79b88a17ff8a.jpg" alt="img-11">     
+      <img class="images" src="https://i.pinimg.com/564x/df/7d/90/df7d9004ba964bbf60ca3f6b2ab64d0c.jpg" alt="img-12">
+
+
+      <img class="images" src="https://i.pinimg.com/564x/8b/98/c4/8b98c4c121d009ca5409d0b8c38521f9.jpg" alt="img-13">
+      <img class="images" src="https://i.pinimg.com/564x/62/8a/b9/628ab952c366dd217b4a7b9f77057439.jpg" alt="img-14">
+      <img class="images" src="https://i.pinimg.com/564x/9b/0e/93/9b0e93f41ae9485e308a9b89793c2b11.jpg" alt="img-15">
+      <img class="images" src="https://i.pinimg.com/564x/72/55/4e/72554e7800ac7c451865cde87275156f.jpg" alt="img-16">
+      <img class="images" src="https://i.pinimg.com/564x/6a/97/55/6a9755eebd34162be97f3f9709ba2dd7.jpg" alt="img-17">
+      <img class="images" src="https://i.pinimg.com/564x/e4/a8/12/e4a812103655721780aad6b4c6f1421a.jpg" alt="img-18">
+      </div>   
+    </section>
+
+<!-- VIDEO / MUSIC -->
+    <section id="music">
+      <div class="container">
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      <h1>Kidcore Music</h1>
+      <img class="sparkles" src="https://img1.picmix.com/output/stamp/normal/2/4/1/7/2107142_5ce19.gif" alt="sparkles-gif">
+      </div>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/otaHDc4yGTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+<!-- FORM -->   
+    <section id="form-section">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="jimmyzin123@gmail.com" required>
+        <input id="submit" type="submit" value="LEARN MORE :3">
+      </form>
+    </section> 
+
+<!-- CREDITS --> 
+    <section class="credits">
+      <div class="container-credits">
+        <img class="star" src="https://i.pinimg.com/originals/ed/76/df/ed76df1b5da78ca7317a01cf9a648d0c.gif" alt="star-gif">
+      <p>Content taken from <a href="https://aesthetics.fandom.com/wiki/Kidcore" target:"_blank">aesthetics.fandom.com</a></p>
+      <img class="star" src="https://i.pinimg.com/originals/ed/76/df/ed76df1b5da78ca7317a01cf9a648d0c.gif" alt="star-gif">
+      </div>
+    </section>
+
+  </main>
+  </body>
+</html>
